@@ -1,0 +1,22 @@
+<form name="myForm">
+<div class="jumbotron text-center">
+<div id="div1">
+	<h1>Register Here</h1><br>
+
+	<h3>
+		<label>First Name</label> <br>
+		<input type="text" ng-model="firstname" required><br><br>
+		<label>Last Name</label> <br>
+		<input type="text" ng-model="lastname" required><br><br>
+		<label>SJSU ID</label> <br>
+		<input type="text" ng-model="sjsuid" required><br><br>
+		<button ng-disabled="myForm.$invalid" ng-click="myFunction()">Register!</button>
+
+	</h3>
+</div>
+<div id="div2">
+<h3>{{count}}/100 people have registered for the event</h3>
+
+</div>
+</div>
+</form>
